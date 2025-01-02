@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الساعة الإسلامية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- تنبيه الصلاة -->
+        <div class="prayer-alert" id="prayer-alert">
+            <span class="alert-text">حان الآن موعد صلاة <span id="next-prayer">الفجر</span></span>
+        </div>
+
+        <!-- الساعة الرقمية -->
+        <div class="clock-container">
+            <div class="digital-clock">
+                <!-- التاريخ -->
+                <div class="date-container">
+                    <div id="hijri-date" class="date-text"></div>
+                    <div id="gregorian-date" class="date-text"></div>
+                </div>
+                
+                <div class="time-group">
+                    <div class="time-unit">
+                        <span id="hours">00</span>
+                        <label>ساعة</label>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span id="minutes">00</span>
+                        <label>دقيقة</label>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <span id="seconds">00</span>
+                        <label>ثانية</label>
+                    </div>
+                </div>
+                <div class="ampm-indicator" id="ampm">
+                    <span class="greeting-text">صباح الخير</span>
+                    <span class="greeting-icon"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- أوقات الصلاة -->
+        <div class="prayer-times-container">
+            <h2 class="section-title">مواقيت الصلاة</h2>
+            <div class="prayer-times">
+                <div class="prayer-time" data-time="05:15">
+                    <div class="prayer-icon">🌅</div>
+                    <div class="prayer-name">الفجر</div>
+                    <div class="prayer-time-value">5:15 ص</div>
+                </div>
+                <div class="prayer-time" data-time="12:27">
+                    <div class="prayer-icon">☀️</div>
+                    <div class="prayer-name">الظهر</div>
+                    <div class="prayer-time-value">12:27 م</div>
+                </div>
+                <div class="prayer-time" data-time="15:49">
+                    <div class="prayer-icon">🌤️</div>
+                    <div class="prayer-name">العصر</div>
+                    <div class="prayer-time-value">3:49 م</div>
+                </div>
+                <div class="prayer-time" data-time="18:21">
+                    <div class="prayer-icon">🌅</div>
+                    <div class="prayer-name">المغرب</div>
+                    <div class="prayer-time-value">6:21 م</div>
+                </div>
+                <div class="prayer-time" data-time="19:35">
+                    <div class="prayer-icon">🌙</div>
+                    <div class="prayer-name">العشاء</div>
+                    <div class="prayer-time-value">7:35 م</div>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
